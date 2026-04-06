@@ -1,6 +1,6 @@
-# inkwell
+# blog-in
 
-- inkwell is the solution aiming to reduce devs stress of having to rewrite codes in creating blogs site 
+- blog-in is the solution aiming to reduce devs stress of having to rewrite codes in creating blogs site 
 
 **i will try to make this readme as short as possible**
 
