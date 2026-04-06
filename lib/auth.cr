@@ -16,7 +16,7 @@ class Auth
     end
 
     # Generate new token
-    random = Random::Secure.new
+    random = Random::Secure
     bytes = Array.new(32) { random.rand(0..255).to_u8 }
     token = "ink_#{Base64.urlsafe_encode(bytes)}"
 
