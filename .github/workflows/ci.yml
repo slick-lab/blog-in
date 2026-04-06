@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Install Crystal
+        uses: crystal-lang/install-crystal@v1
+        with:
+          crystal: latest
+
+      - name: Install dependencies
+        run: shards install
+
+      - name: Build binary
+        run: crystal build lib/server.cr --release -o blog-in
+
+      - name: Upload binary artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: blog-in
+          path: blog
