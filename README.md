@@ -6,7 +6,7 @@
 
 ## installation
  ```bash
- $ curl -sSL "https://github.com/slick-lab/blog-in/-/raw/main/install.sh" | bash
+ $ curl -sSL "https://raw.githubusercontent.com/slick-lab/blog-in/refs/heads/main/install.sh" | bash
 ```
 this will install and run the install script 
 after sucessfull installation you will get the pure binary file 
