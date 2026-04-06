@@ -18,7 +18,7 @@ class Auth
     # Generate new token
     random = Random::Secure
     bytes = Array.new(32) { random.rand(0..255).to_u8 }
-    token = "ink_#{Base64.urlsafe_encode(bytes)}"
+    token = "blog-in_#{Base64.urlsafe_encode(bytes)}"
 
     File.write(TOKEN_FILE, token)
 
