@@ -11,7 +11,7 @@ class Create
         if File.exists?(final_file)
            return false 
         else
-         File.write(final_file, content)
+         File.write(final_file, @content)
           return true 
        end 
      end 
