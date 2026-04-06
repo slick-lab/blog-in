@@ -11,7 +11,6 @@ class Create
 
   def create_file 
     final_file = "posts/#{@file_name}"
-      spawn 
         if File.exists?(final_file)
            return false 
         else
@@ -20,5 +19,5 @@ class Create
        end 
      end 
    end 
-end 
+ 
     
