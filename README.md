@@ -12,7 +12,7 @@ this will install and run the install script
 after sucessfull installation you will get the pure binary file 
 the run with 
 ```bash
-$ ./inkwell
+$ ./blog-in
 ```
 you will get your admin token on first run and will alos be available to view at admin.token it should be used when sending request for admin actions to be included in x-api-key
 
