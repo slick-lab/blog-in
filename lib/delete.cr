@@ -5,12 +5,16 @@ class Delete
   end 
 
   def delete_post
-    if File.exists?(@file)
+  if File.exists?(@file)
+    begin
       File.delete(@file)
-      return trye 
-    else 
-     return false 
-   end 
- end 
+      true
+    rescue ex
+      puts "Error deleting file: #{ex.message}"
+      false
+    end
+  else
+    false
+  end
+ end
 end 
-  
