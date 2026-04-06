@@ -1,18 +1,18 @@
 class Update
-  def initialiaze(filename: String, new_content: String)
-    @filename = filenams
-    @new_content = content
+  def initialize(filename : String, new_content : String)
+    @filename = filename
+    @new_content = new_content
     update_the_file
-  end 
+  end
 
   def update_the_file
     file = "posts/#{@filename}"
     if File.exists?(file)
-    File.write(file, @new_content)
-     true 
-  else 
-    false 
-  end 
-end 
-end 
-    
+      File.write(file, @new_content) # overwrite file
+      true
+    else
+      false
+    end
+  end
+end
+
