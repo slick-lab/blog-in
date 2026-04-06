@@ -3,7 +3,7 @@
 # License: MIT
 # Copyright (c) 2024
 class Delete 
-  def initialize(file: String)
+  def initialize(file : String)
     @file = file 
     delete_post
   end 
