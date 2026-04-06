@@ -3,7 +3,7 @@
 # License: MIT
 # Copyright (c) 2024
 class Create 
-  def initialize(file_name: String, content: String)
+  def initialize(file_name : String, content : String)
     @file_name = file_name 
     @content = content 
     create_file 
