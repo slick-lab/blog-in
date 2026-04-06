@@ -1,3 +1,7 @@
+# blog-in - Simple markdown blog API
+# Created by: slick_phantom
+# License: MIT
+# Copyright (c) 2024
 class Get
   def initialize(file_name : String)
     @file_name = file_name
