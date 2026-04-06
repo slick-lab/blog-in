@@ -1,0 +1,16 @@
+name: blog-in
+version: 1.0.0
+
+authors:
+  - slick_phantom <slick-lab.name.ng>
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+    version: "~> 1.0"
+
+targets:
+  inkwell:
+    main: lib/server.cr
