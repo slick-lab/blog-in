@@ -1,17 +1,17 @@
 #!/bin/bash
 
-echo " installing inkwell.."
+echo " installing blog-in.."
 
-mkdir -p ~/.inkwell
-cd ~/.inkwell
+mkdir -p ~/.blog-in
+cd ~/.blog-in
 
-curl -L https://gitlab.com/dart.co/inkwell/-/jobs/13283284522/artifacts/raw/inkwell-linux?inline=false -o inkwell
+curl -L https://github.com/slick-lab/blog-in/actions/runs/24042004634/artifacts/6290682890 -o blog-in
 
-chmod +x inkwell
+chmod +x blog-in
 
-echo "inkwell installed.."
+echo "blog-in installed.."
 echo ""
 echo "Run it"
-echo " cd ~/.inkwell"
+echo " cd ~/.blog-in"
 echo ""
 echo " add path"
