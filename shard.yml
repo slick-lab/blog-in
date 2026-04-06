@@ -12,5 +12,5 @@ dependencies:
     version: "~> 1.0"
 
 targets:
-  inkwell:
+  blog-in:
     main: lib/server.cr
